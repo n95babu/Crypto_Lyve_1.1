@@ -40,7 +40,7 @@ getCoins();
 const MKCap = async () => {
   const res = await axios.get(`${BASE_URL}`);
   const cap = res.data.data.stats;
-  console.log(cap);
+  // console.log(cap);
   jcap.innerHTML = '';
   const h4 = createNode('h4');
   h4.innerHTML = `Market Cap: $${cap.totalMarketCap.toFixed(0)}`;
