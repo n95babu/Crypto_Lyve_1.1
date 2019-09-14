@@ -85,7 +85,17 @@ li span {
   padding: 4em;
   /* color: lightseagreen; */
   /* box-shadow: 4px 4px 0 red; */
-  border: 4px 4px green;
+  border: 4px 4px red;
+}
+
+li a {
+  background-color: black;
+  ;
+}
+
+li {
+  /* border: 4px 4px red; */
+  background: green;
 }
 
 /* font-size: 14px;
@@ -250,11 +260,11 @@ letter-spacing: 0.34px; */
   .header {
     flex-direction: column;
     align-items: center;
-    .header {
+    /* .header {
       width: 80%;
       margin: 0 auto;
       max-width: 1150px;
-    }
+    } */
   }
 }
 
@@ -262,5 +272,15 @@ letter-spacing: 0.34px; */
   .header {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header, .main-nav {
+    display: flex;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
   }
 }
